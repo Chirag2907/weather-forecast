@@ -1,0 +1,195 @@
+
+input{
+    margin-left: 11rem;
+    background-color: #202c3c;
+    border: 1px solid #202c3c;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.8rem;
+    font-size:1.2rem;
+    width: 50%;
+  }
+  
+  input:focus{
+    outline: none;
+    box-shadow: 0 0 0 0.1rem #202c3c;
+  }
+
+.submit{
+    /* submit button */
+    background-color: #202c3c;
+    border: 1px solid #202c3c;
+    color: white;
+    font-size: 1.2rem;
+    margin: 5px;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.submit:hover{
+    outline: none;
+    box-shadow: 0 0 0 0.1rem #202c3c;
+}
+
+.forecast{
+    /* forecast container */
+    background-color: #202c3c;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.details{
+  background-color: #202c3c;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.summary{
+  grid-column: 2/3;
+  grid-row: 1/4;
+  background-color: #202c3c;
+  border-radius: 1rem;
+  padding: 1.2rem;
+}
+
+.content{
+  color: #8b939f;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 70% auto;
+  grid-template-rows: 10rem 12rem 12rem;
+  grid-gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.temp{
+  font-size: 3rem;
+  font-weight: 600;
+  color: white;
+}
+
+.city{
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  margin-top: 2rem;
+}
+
+.forecast-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #8b939f;
+  height:5rem;
+}
+
+.time{
+  display: flex;
+  justify-content: center;
+}
+
+.temper{
+  display: flex;
+  justify-content: center;
+  color:white;
+  font-size: 1.2rem;
+}
+
+.horizontal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.today-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.detail-value{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+}
+
+.items{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+.main-icon{
+  grid-column: 2/3;
+  grid-row: 1/4;
+  transform: scale(3);
+  justify-self: center;
+  align-self: center;
+}
+
+.city-temp{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2rem 2rem;
+  grid-gap: 1rem;
+  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.labell{
+  margin-top:-1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+/* make this responsive with city-temp on top*/
+@media screen and (max-width: 1440px){
+  html{
+    width: 100vh;
+  }
+  .content{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+
+  /* city-temp at top of page */
+  .city-temp{
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+  .main-icon{
+    margin-top:-28rem;
+  }
+  
+  /* forecast div here */
+  .forecast{
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  /* details div here */
+  .details{
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  /* summary div here */
+  .summary{
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }  
+  
+}
