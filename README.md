@@ -28,6 +28,6 @@ If you want to develop and run the website on your local machine, follow these s
 4. Run the command npm start to start the development server.
 5. The website will be accessible at http://localhost:3000.
 ## Acknowledgments
-This project was created as a part of my learning process to understand and implement ReactJS and OpenWeatherMap API. The OpenWeatherMap API key has been hardcoded into the code, so there is no need for you to provide your own API key.
+This project was created as a part of my learning process to understand and implement ReactJS and OpenWeatherMap API.
 
 Thank you for using this weather forecast website, and I hope it helps you stay informed about the weather in your area and beyond.
